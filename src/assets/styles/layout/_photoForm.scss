@@ -1,0 +1,41 @@
+.containerForm{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    .formAddNew{
+        label{
+            h3{
+                font-weight:bold;
+            }
+            #inpTitle,#selectForm{
+                border: 1px solid black;
+                width:300px;
+                margin:10px 0px;
+                padding:5px;
+            }
+            .randomPhoto{
+                margin: 10px 0;
+                button{
+                    margin-bottom: 20px;
+                    border: 1px solid black;
+                    padding:5px 5px;
+                    border-radius: 10px;
+                    background-color:$hd-color;
+                    cursor: pointer;
+                }
+                img{
+                    width:120px;
+                    height:120px;
+                }
+            }
+        }
+        button{
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding:5px 5px;
+            border-radius: 10px;
+            background-color:$hd-color;
+            cursor: pointer;
+        }
+    }
+}

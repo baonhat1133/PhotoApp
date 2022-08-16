@@ -1,0 +1,19 @@
+.header-App{
+    height:50px;
+    border-bottom: 1px solid #ccc;
+    ul{
+        @extend %flex-around;
+        background-color:$hd-color;
+        height:100%;
+        font-size: $font-sz-hd;
+        li{
+            @extend %flex-align-ct;
+            font-weight: bold;
+        }
+        .nav-link-hd{
+            &.active{
+                color: red;
+            }
+        }
+    } 
+}
