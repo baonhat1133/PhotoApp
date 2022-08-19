@@ -7,8 +7,9 @@ function Photo() {
     return (
          <>
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
-                <Route path="add" element={<AddNew/>}/>
+                <Route path="/" element={<MainPage/>}/>{/* /photo */}
+                <Route path="add" element={<AddNew/>}/>{/* /photo/add */}
+                <Route path="add/:photoId" element={<AddNew/>}/>{/* /photo/add/id_bất_kì */}
             </Routes>
          </>
            

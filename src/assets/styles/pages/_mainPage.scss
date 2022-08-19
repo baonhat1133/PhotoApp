@@ -1,0 +1,95 @@
+.container-list-photo{
+    .listPhotoApp{
+        display:flex;
+        flex-wrap:wrap;
+        .empty-list{
+            font-size:30px;
+            color: red;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .photoItem{
+            width:calc(20%-35px);
+            position: relative;
+            margin-left: 35px;
+            margin-top:35px;
+            // display: inline-block;
+            .imgList{
+                .photoElement{
+                    border-radius: 10px;
+                    width:260px;
+                    height:260px;
+                }
+            }
+            &:hover{
+                .hoverEditDel{
+                    display: block;
+                    animation:identifier 1s linear forwards;
+                }
+                .photoElement{
+                    animation:photo linear forwards;
+                }
+            }
+            .hoverEditDel{
+                position: absolute;
+                top:50px;
+                width:260px;
+                display:none;
+    
+                h3{
+                    height:35px;
+                    color: $title-color;
+                    font-weight:bold;
+                    font-size: 18px;
+                    text-align: center;
+                    display:block;
+                }
+                .btn{
+                    display:flex;
+                    justify-content:center;
+                    &-edit, &-del{
+                        width:100px;
+                        background-color:$btn-list-color;
+                        padding:10px 10px;
+                        border-radius:20px;
+                        margin-top:15px;
+                        color: $btn-text-color;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                    &-edit{
+                        margin-right: 10px;
+                    }
+                }
+                .love{
+                    color:$btn-text-color;
+                    font-size: 50px;
+                    display:flex;
+                    justify-content:center;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+    
+            }
+        }
+       
+    }
+}
+@keyframes identifier {
+    from{
+        opacity: 0.1;
+    }
+    to{
+       opacity: 1;
+    }
+}
+@keyframes photo {
+    from{
+        opacity: 1;
+    }
+    to{
+       opacity: 0.5;
+       transform: scale(1.05)
+    }
+}
+

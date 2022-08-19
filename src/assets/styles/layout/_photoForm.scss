@@ -3,15 +3,31 @@
     justify-content:center;
     margin-top:20px;
     .formAddNew{
+        .form-group{
+            height:75px;
+        }
         label{
-            h3{
-                font-weight:bold;
+            font-weight:bold;
+            display:block;
+           
             }
             #inpTitle,#selectForm{
                 border: 1px solid black;
                 width:300px;
-                margin:10px 0px;
+                margin-top:10px;
                 padding:5px;
+            }
+            #selectForm{
+                margin-bottom:10px;
+            }
+            .err-title{
+                display:block;
+                margin-bottom: 10px;
+                font-size: 12px;
+                color: red;
+                font-family: italic;
+                padding-left:10px;
+                padding-top:2px;
             }
             .randomPhoto{
                 margin: 10px 0;
@@ -27,14 +43,14 @@
                     width:120px;
                     height:120px;
                 }
-            }
         }
-        button{
+        .submitForm{
             margin-bottom: 20px;
             border: 1px solid black;
             padding:5px 5px;
             border-radius: 10px;
             background-color:$hd-color;
+            margin-top:128px;
             cursor: pointer;
         }
     }
