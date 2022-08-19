@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./assets/styles/main.scss";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
